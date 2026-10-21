@@ -1,0 +1,240 @@
+body {
+    background:radial-gradient(rgb(7, 139, 184), rgb(3, 53, 70));
+    color: rgb(238, 238, 238);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 1.2rem;
+    color: rgb(238, 238, 238);
+    padding-top: 1rem;
+    padding-left: 0;
+    font-size: 50px;
+    font-weight:700;
+}
+
+
+@media (max-width: 767px) {
+    #navbar {
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+
+#navbar a {
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    transition: transform 0.2s ease;
+}
+
+#navbar a:hover {
+    color: goldenrod;
+    transform: translateY(-2px) scale(1.05);
+}
+
+#logo {
+    max-height: 75px;
+    width: auto;
+    padding-top: .5rem;
+}
+
+
+
+
+
+
+#skills h2, #education h2, #project{
+    color: goldenrod;
+}
+.summaryStatement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.summaryStatement h1 {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.summaryStatement h5 {
+    color: goldenrod;
+}
+
+#resumeButton {
+    background-color: goldenrod;
+    font-weight:bold;
+    transition: transform 0.2s ease;
+}
+
+#resumeButton:hover {
+    transform: translateY(-2px) scale(1.05);
+
+}
+
+
+#education, #projects, .skills-container, .footer {
+    margin-bottom: 7rem;
+}
+
+.header {
+    margin-top: 25px;
+    margin-bottom: 35px; 
+}
+#profilePicture {
+    max-height: 400px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .summaryStatement, #education, #projects, .skills-container, #contact {
+        margin-bottom: 6rem;
+    }
+    .header {
+        margin-bottom: 50px;
+    }
+    #profilePicture {
+        max-height: 600px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .summaryStatement, #education, #projects, .skills-container, #contact {
+        margin-bottom: 8rem;
+    }
+    .header {
+        margin-bottom: 50px;
+    }
+    #profilePicture {
+        max-height: 600px;
+    }
+    #contact{
+        margin-top: 50px;
+    }
+}
+
+/* skills */
+
+    .skill-card {
+        border: none;
+        border-radius: 10px; 
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background:radial-gradient(rgb(238, 238, 238), rgb(238, 238, 238));
+
+    }
+
+    .skill-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-title {
+        font-weight: 700;
+        color: goldenrod; 
+        margin-bottom: 0.75rem;
+        font-size: 1.25rem;
+    }
+
+    .skill-text {
+        color: black;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }      
+   
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: goldenrod;
+    font-size: 1.2rem;
+}
+
+.footer li a {
+    color: rgb(238, 238, 238);
+    text-decoration: none;
+    margin-left: 40px;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.footer li a:hover {
+    color: goldenrod;
+    transform: translateY(-2px) scale(1.05);
+}
+
+#social-media img, #email img {
+    max-height: 40px;
+    width: 40px;
+}
+
+#social-media, #email {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.socialMedia p, #direct-email p {
+    margin-left: 40px;
+}
+
+#direct-email {
+    white-space: nowrap;
+}
+
+#email {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 5px;
+}
+
+#contact {
+    margin-bottom: 25px;
+}
+
+#EducationTitle, #ProjectsTitle {
+    color: goldenrod;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: goldenrod;
+    color: rgb(1, 30, 39);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.carousel-item img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-item .card-body {
+    background-color: rgb(4, 90, 119);
+}
+
+#topReturn, #topReturn a {
+    margin: 200px 0px 50px 3px;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    color:  rgb(238, 238, 238);
+}
+
+#topReturn:hover {
+    color: goldenrod;
+    transform: translateY(-2px) scale(1.02);
+}
+
+#return{
+    text-decoration: none;
+}
